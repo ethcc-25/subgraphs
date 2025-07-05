@@ -1,0 +1,22 @@
+type DepositProcessed @entity(immutable: true) {
+  id: Bytes!
+  positionId: Bytes! # bytes32
+  pool: Int! # uint8
+  user: Bytes! # address
+  amount: BigInt! # uint256
+  shares: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type WithdrawProcessed @entity(immutable: true) {
+  id: Bytes!
+  positionId: Bytes! # bytes32
+  pool: Int! # uint8
+  user: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

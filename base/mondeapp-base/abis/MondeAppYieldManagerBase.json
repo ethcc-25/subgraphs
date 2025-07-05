@@ -1,0 +1,70 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "positionId",
+        "type": "bytes32",
+        "indexed": true
+      },
+      {
+        "internalType": "uint8",
+        "name": "pool",
+        "type": "uint8",
+        "indexed": false
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "internalType": "uint256",
+        "name": "shares",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "type": "event",
+    "name": "DepositProcessed",
+    "anonymous": false
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "positionId",
+        "type": "bytes32",
+        "indexed": true
+      },
+      {
+        "internalType": "uint8",
+        "name": "pool",
+        "type": "uint8",
+        "indexed": false
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "type": "event",
+    "name": "WithdrawProcessed",
+    "anonymous": false
+  }
+]
