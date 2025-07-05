@@ -17,9 +17,6 @@ dataSources:
       language: wasm/assemblyscript
       entities:
         - DepositProcessed
-        - RoleAdminChanged
-        - RoleGranted
-        - RoleRevoked
         - WithdrawProcessed
       abis:
         - name: MondeAppYieldManagerArbitrum
@@ -27,12 +24,6 @@ dataSources:
       eventHandlers:
         - event: DepositProcessed(indexed bytes32,uint8,indexed address,uint256,uint256)
           handler: handleDepositProcessed
-        - event: RoleAdminChanged(indexed bytes32,indexed bytes32,indexed bytes32)
-          handler: handleRoleAdminChanged
-        - event: RoleGranted(indexed bytes32,indexed address,indexed address)
-          handler: handleRoleGranted
-        - event: RoleRevoked(indexed bytes32,indexed address,indexed address)
-          handler: handleRoleRevoked
         - event: WithdrawProcessed(indexed bytes32,uint8,indexed address,uint256)
           handler: handleWithdrawProcessed
       file: ./src/monde-app-yield-manager-arbitrum.ts
